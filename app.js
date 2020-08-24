@@ -48,3 +48,6 @@ module.exports = app;
 
 //On MacOS or Linux, run the app with this command:
 //$ DEBUG=myapp:* npm start
+
+//starting the server with nodemon. installed locally
+//DEBUG=myapp:* npm run devstart
