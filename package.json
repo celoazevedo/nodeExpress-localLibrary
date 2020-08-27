@@ -6,7 +6,6 @@
     "start": "node ./bin/www",
     "devstart": "nodemon ./bin/www",
     "serverstart": "DEBUG=myapp:* npm run devstart"
-
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
@@ -14,6 +13,7 @@
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
+    "mongoose": "^5.10.1",
     "morgan": "~1.9.1"
   },
   "devDependencies": {
