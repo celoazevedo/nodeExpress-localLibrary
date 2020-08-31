@@ -38,6 +38,13 @@ AuthorSchema
     return (this.date_of_death.getYear() - this.date_of_birth.getYear()).toString();
 });
 
+// Virtual for author's lifespan formated
+AuthorSchema
+.virtual('lifespan_formated')
+.get(function () {
+    return moment(this.date_of_death.getYear() - this.date_of_birth.getYear()).format('MMMM Do, YYYY').toString();
+});
+
 // Virtual for author's URL
 AuthorSchema
 .virtual('url')
